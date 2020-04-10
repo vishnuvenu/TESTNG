@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test1" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-10T09:09:52" hostname="BHIDH6Q5M2" time="0.009">
+  <properties/>
+  <testcase name="TestDataProvider[0](Guru99, India)" classname="Test1" time="0.008"/>
+  <testcase name="TestDataProvider[1](Krishna, UK)" classname="Test1" time="0.001"/>
+  <testcase name="TestDataProvider[2](Bhupesh, USA)" classname="Test1" time="0.0"/>
+  <system-out><![CDATA[Guru99
+India
+Krishna
+UK
+Bhupesh
+USA
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

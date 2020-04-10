@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'TestNGGradle'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.testng', name: 'testng', version: '6.0'
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation group: 'org.apache.poi', name: 'poi', version: '4.1.2'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    compile group: 'io.appium', name: 'java-client', version: '7.0.0'
+
+}
+
+
+task smokeTests(type:Test){
+    useTestNG(){
+        //includeGroups 'smoke'
+        suites 'smoke.xml'
+        useDefaultListeners = true
+        outputDirectory = file("$projectDir/AutomationReport")
+    }
+
+    reports.html.setDestination(file("$projectDir/GradleReport"))
+}

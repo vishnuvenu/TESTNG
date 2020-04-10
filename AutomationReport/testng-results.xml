@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-10T14:39:52Z" name="Gradle suite" finished-at="2020-04-10T14:39:52Z" duration-ms="20">
+    <groups>
+      <group name="smoke">
+        <method signature="Test1.TestDataProvider(java.lang.String, java.lang.String)" name="TestDataProvider" class="Test1"/>
+      </group>
+    </groups>
+    <test started-at="2020-04-10T14:39:52Z" name="Gradle test" finished-at="2020-04-10T14:39:52Z" duration-ms="20">
+      <class name="Test1">
+        <test-method signature="TestDataProvider(java.lang.String, java.lang.String)" started-at="2020-04-10T14:39:52Z" name="TestDataProvider" finished-at="2020-04-10T14:39:52Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Guru99]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method signature="TestDataProvider(java.lang.String, java.lang.String)" started-at="2020-04-10T14:39:52Z" name="TestDataProvider" finished-at="2020-04-10T14:39:52Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Krishna]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UK]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method signature="TestDataProvider(java.lang.String, java.lang.String)" started-at="2020-04-10T14:39:52Z" name="TestDataProvider" finished-at="2020-04-10T14:39:52Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhupesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

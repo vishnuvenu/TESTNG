@@ -2,6 +2,7 @@
 /build/
 /AutomationReport/
 /GradleReport/
+.idea
 
 *.class
 

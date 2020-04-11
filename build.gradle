@@ -25,6 +25,7 @@ task smokeTests(type:Test){
     useTestNG(){
         //includeGroups 'smoke'
         suites 'smoke.xml'
+        //suites 'sanity.xml'
         useDefaultListeners = true
         outputDirectory = file("$projectDir/AutomationReport")
     }

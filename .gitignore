@@ -3,6 +3,8 @@
 /AutomationReport/
 /GradleReport/
 
+*.class
+
 
 # Ignore Gradle GUI config
 gradle-app.setting

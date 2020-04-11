@@ -29,5 +29,16 @@ task smokeTests(type:Test){
         outputDirectory = file("$projectDir/AutomationReport")
     }
 
+    afterSuite { desc, result ->
+        if (!desc.parent) {
+            println("=====================================================================================")
+            println("${result.resultType} " +
+                    "(${result.testCount} tests, " +
+                    "${result.successfulTestCount} successes, " +
+                    "${result.failedTestCount} failures, " +
+                    "${result.skippedTestCount} skipped)")
+        }
+    }
+
     reports.html.setDestination(file("$projectDir/GradleReport"))
 }
